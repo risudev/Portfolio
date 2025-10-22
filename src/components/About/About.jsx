@@ -45,7 +45,7 @@ const About = () => {
                     </p>
                     {/* Resume Button */}
                     <a
-                        href="https://drive.google.com/file/d/1raFJbwwGwcCLLVN5j0okhJY3_G7DPW2r"
+                        href="https://drive.google.com/file/d/1raFJbwwGwcCLLVN5j0okhJY3_G7DPW2r/view?usp=drive_link"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
@@ -59,9 +59,9 @@ const About = () => {
 
                 </div>
                 {/* Right Side */}
-                <div className="md:w-1/2 flex justify-center md:justify-end ">
+                {/* <div className="md:w-1/2 flex justify-center md:justify-end ">
                     <Tilt
-                        className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] rounded-full overflow-hidden border-4 border-purple-700 shadow-lg"
+                        className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] rounded-full overflow-hidden border-4 border-purple-700"
                         tiltMaxAngleX={20}
                         tiltMaxAngleY={20}
                         perspective={1000}
@@ -75,7 +75,16 @@ const About = () => {
                             className="w-full h-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
                         />
                     </Tilt>
+                </div> */}
+
+                <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] rounded-full overflow-hidden border-4 border-purple-700 shadow-[0_10px_20px_rgba(130,69,236,0.5)] ml-5">
+                    <img
+                        src={profileImage}
+                        alt="Riswan"
+                        className="w-full h-full object-cover"
+                    />
                 </div>
+
 
             </div>
         </section>
