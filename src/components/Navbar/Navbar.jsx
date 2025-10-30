@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+//import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +29,7 @@ const Navbar = () => {
     };
 
     const menuItems = [
+        { id: "home", label: "Home" },
         { id: "about", label: "About" },
         { id: "skills", label: "Skills" },
         { id: "certificates", label: "Certificates" },
@@ -73,7 +74,7 @@ const Navbar = () => {
 
 
                 {/* Social Icons */}
-                <div className="hidden md:flex space-x-4">
+                {/* <div className="hidden md:flex space-x-4">
                     <a
                         href="https://github.com/risudev"
                         target="_blank"
@@ -90,7 +91,7 @@ const Navbar = () => {
                     >
                         <FaLinkedin size={24} />
                     </a>
-                </div>
+                </div> */}
 
                 {/* Mobile Menu Icon */}
                 <div className="md:hidden">
@@ -123,7 +124,7 @@ const Navbar = () => {
                                 </button>
                             </li>
                         ))}
-                        <div className="flex space-x-4">
+                        {/* <div className="flex space-x-4">
                             <a
                                 href="https://github.com/risudev"
                                 target="_blank"
@@ -140,7 +141,7 @@ const Navbar = () => {
                             >
                                 <FaLinkedin size={24} />
                             </a>
-                        </div>
+                        </div> */}
                     </ul>
                 </div>
             )}

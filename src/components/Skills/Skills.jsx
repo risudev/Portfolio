@@ -22,13 +22,10 @@ const Skills = () => {
             {/* Section Title */}
             <div className="text-center mb-12">
                 <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#8245ec] to-[#3eb4ff] text-white">
-                    SKILLS
+                    Technical Skills
                 </h2>
                 <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-3 rounded-full"></div>
-                <p className="text-gray-400 mt-4 text-lg font-semibold max-w-2xl mx-auto">
-                    A collection of my technical skills and expertise honed through
-                    various projects and experiences.
-                </p>
+
             </div>
 
             {/* Skill Categories */}

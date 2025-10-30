@@ -1,91 +1,134 @@
-import React from 'react';
-import { Typewriter } from 'react-simple-typewriter';
-import profileImage from '../../assets/profile1.jpg';
-import Tilt from 'react-parallax-tilt';
+import { SiReact } from "react-icons/si";
+import { SiNodedotjs } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { MdLaptopMac } from "react-icons/md";
 
 const About = () => {
     return (
-
         <section
             id="about"
-            className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font
-            -sans mt-16 md:mt-24 lg:mt-32"
+            className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient text-white"
         >
-            <div className="flex flex-col-reverse md:flex-row justify-between items-center ">
-                {/* Left Side */}
-                <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
-                    {/* Greeting */}
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
-                        Hi, I am
-                    </h1>
-                    {/* Name */}
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
-                        Riswan N
-                    </h2>
-                    {/* Skills Heading with Typing Effect */}
-                    <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
+            <div className="container mx-auto max-w-5xl text-center text-white">
+                <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#8245ec] to-[#3eb4ff] text-white">
+                    About Me
+                </h2>
+                <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-4 rounded-full mb-8"></div>
 
-                        <Typewriter
-                            words={[
-                                'Front-End Developer',
-                                'Back-End Developer',
-                                'MERN Fullstack Developer',
-                            ]}
-                            loop={0}
-                            cursor
-
-                            typeSpeed={80}
-                            deleteSpeed={50}
-                            delaySpeed={2000}
-                        />
-                    </h3>
-                    {/* About Me Paragraph */}
-                    <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-                        I specialize in building fast, responsive, and user friendly web applications using modern technologies. With experience across both frontend and backend, I focus on clean, scalable code and real-world performance. My goal is to craft seamless digital experiences that not only work beautifully but also feel intuitive to use.
+                <div className="space-y-6 text-left">
+                    <p className="text-gray-300">
+                        Hi! I’m Riswan, a passionate and self-taught <b>MERN Fullstack Developer</b> from{" "}
+                        <b>Vellore District, Tamil Nadu.</b> After earning my <b>B.Tech in Information Technology,</b>
+                        I discovered my passion for web development and began my journey as a fullstack developer —
+                        and I’ve been building ever since! <br />
+                        <br />I specialize in creating <b>responsive, user-friendly,</b> and{" "}
+                        <b>scalable web applications.</b> My focus is always on writing clean, maintainable code and
+                        designing <b>intuitive user interfaces.</b>
                     </p>
-                    {/* Resume Button */}
-                    <a
-                        href="https://drive.google.com/file/d/1raFJbwwGwcCLLVN5j0okhJY3_G7DPW2r/view?usp=drive_link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
-                        style={{
-                            background: 'linear-gradient(90deg, #8245ec, #a855f7)',
-                            boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
-                        }}
-                    >
-                        View Resume
-                    </a>
 
+                    <p className="text-gray-300">
+                        <b>⚙️ Tech Stack : </b>
+                        <br />
+                        <b>Frontend:</b> HTML5, CSS3, TailwindCSS, ShadCN, JavaScript, ReactJS, Three.js <br />
+                        <b>Backend:</b> Node.js, Express.js, MongoDB, Mongoose, MySQL, Middleware, JWT, Postman API
+                        <br />
+                        <b>Version Control & Deployment:</b> Git, Github, Netlify, Render
+                        <br />
+                    </p>
+
+                    <p className="text-gray-300">
+                        <b>🚀 Projects </b>
+                        <br />
+                        I’ve built several real-world projects, including:
+                        <ul className="list-disc list-inside mt-2">
+                            <li>
+                                🏷️ <b>Auction Platform</b> – A real-time bidding system for users to buy and sell products.
+                            </li>
+                            <li>
+                                🛍️ <b>E-commerce Website</b> – A responsive online store with secure authentication and product management.
+                            </li>
+                            <li>
+                                🌐 <b>Portfolio Website</b> – Showcasing my work and skills as a fullstack developer.
+                                <i> (More exciting projects are on the way!)</i>
+                            </li>
+                        </ul>
+                    </p>
+
+                    <p className="text-gray-300">
+                        <b>📚 Learning & Growth</b>
+                        <br />
+                        I'm currently enrolled in the{" "}
+                        <b>IIT Madras-Guvi MERN Fullstack Development Certification Program,</b> where I'm deepening
+                        my understanding of fullstack architecture and best practices.
+                    </p>
+
+                    <p className="text-gray-300">
+                        <b>🌟 Let’s Connect</b>
+                        <br />
+                        I'm actively seeking <b>opportunities to contribute to real-world projects,</b> collaborate with
+                        passionate teams, and grow as a developer. <br />
+                        You can explore my projects on{" "}
+                        <a href="https://github.com/risudev" target="_blank" rel="noopener noreferrer">
+                            <b>GitHub</b>
+                        </a>{" "}
+                        <span role="img" aria-label="arrow">👉</span> let's connect and build something great together!
+                    </p>
                 </div>
-                {/* Right Side */}
-                {/* <div className="md:w-1/2 flex justify-center md:justify-end ">
-                    <Tilt
-                        className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] rounded-full overflow-hidden border-4 border-purple-700"
-                        tiltMaxAngleX={20}
-                        tiltMaxAngleY={20}
-                        perspective={1000}
-                        scale={1.05}
-                        transitionSpeed={1000}
-                        gyroscope={true}
-                    >
-                        <img
-                            src={profileImage}
-                            alt="Riswan"
-                            className="w-full h-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
-                        />
-                    </Tilt>
-                </div> */}
 
-                <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] rounded-full overflow-hidden border-4 border-purple-700 shadow-[0_10px_20px_rgba(130,69,236,0.5)] ml-5">
-                    <img
-                        src={profileImage}
-                        alt="Riswan"
-                        className="w-full h-full object-cover"
-                    />
+                {/* 🌟 4 Developer Role Cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+                    {/* Frontend */}
+                    <div className="gradient-border p-6 rounded-xl bg-white/10 backdrop-blur-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                        <div className="flex flex-col items-center text-center">
+                            <div className="p-3 rounded-full bg-cyan-500/20 mb-3">
+                                <SiReact className="h-10 w-10 text-cyan-400" />
+                            </div>
+                            <h4 className="font-semibold text-lg text-white">Frontend Developer</h4>
+                            <p className="text-gray-300 text-sm mt-2">
+                                Crafting clean, responsive, and interactive UIs using React, TailwindCSS, and modern web tools.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Backend */}
+                    <div className="gradient-border p-6 rounded-xl bg-white/10 backdrop-blur-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                        <div className="flex flex-col items-center text-center">
+                            <div className="p-3 rounded-full bg-green-500/20 mb-3">
+                                <SiNodedotjs className="h-10 w-10 text-green-400" />
+                            </div>
+                            <h4 className="font-semibold text-lg text-white">Backend Developer</h4>
+                            <p className="text-gray-300 text-sm mt-2">
+                                Developing secure APIs and business logic using Node.js, Express, and RESTful architecture.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Database */}
+                    <div className="gradient-border p-6 rounded-xl bg-white/10 backdrop-blur-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                        <div className="flex flex-col items-center text-center">
+                            <div className="p-3 rounded-full bg-yellow-500/20 mb-3">
+                                <SiMongodb className="h-10 w-10 text-yellow-400" />
+                            </div>
+                            <h4 className="font-semibold text-lg text-white">Database Developer</h4>
+                            <p className="text-gray-300 text-sm mt-2">
+                                Managing and optimizing data with MongoDB and Mongoose for seamless data flow.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Fullstack */}
+                    <div className="gradient-border p-6 rounded-xl bg-white/10 backdrop-blur-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                        <div className="flex flex-col items-center text-center">
+                            <div className="p-3 rounded-full bg-purple-500/20 mb-3">
+                                <MdLaptopMac className="h-10 w-10 text-purple-400" />
+                            </div>
+                            <h4 className="font-semibold text-lg text-white">Fullstack Developer</h4>
+                            <p className="text-gray-300 text-sm mt-2">
+                                Building complete, scalable web apps by integrating frontend and backend technologies.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-
             </div>
         </section>
     );

@@ -21,9 +21,7 @@ const Certificates = () => {
                     CERTIFICATES
                 </h2>
                 <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-3 rounded-full"></div>
-                <p className="text-gray-400 mt-4 text-lg font-semibold max-w-2xl mx-auto">
-                    Industry-recognized credentials demonstrating technical proficiency and dedication to professional growth.
-                </p>
+
             </div>
 
             {/* Certificates Grid */}

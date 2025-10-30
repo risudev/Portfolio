@@ -69,16 +69,16 @@ const Contact = () => {
 
                 <form ref={form} onSubmit={sendEmail} className="mt-6 flex flex-col space-y-5">
                     <input
-                        type="email"
-                        name="user_email"
-                        placeholder="Your Email"
+                        type="text"
+                        name="user_name"
+                        placeholder="Your Name"
                         required
                         className="w-full p-4 rounded-lg bg-[#1a1123] text-white border border-purple-600/40 focus:border-pink-500 shadow-inner focus:shadow-[0_0_15px_rgba(236,72,153,0.3)] transition-all placeholder-gray-400"
                     />
                     <input
-                        type="text"
-                        name="user_name"
-                        placeholder="Your Name"
+                        type="email"
+                        name="user_email"
+                        placeholder="Your Email"
                         required
                         className="w-full p-4 rounded-lg bg-[#1a1123] text-white border border-purple-600/40 focus:border-pink-500 shadow-inner focus:shadow-[0_0_15px_rgba(236,72,153,0.3)] transition-all placeholder-gray-400"
                     />

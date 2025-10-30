@@ -14,10 +14,7 @@ const Project = () => {
                     Projects
                 </h2>
                 <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-4 rounded-full"></div>
-                <p className="text-gray-400 mt-4 text-base md:text-lg max-w-2xl mx-auto font-medium">
-                    A curated collection of my most impactful and technically challenging
-                    work — combining elegant design with functional architecture.
-                </p>
+
             </div>
 
             {/* Projects List */}
